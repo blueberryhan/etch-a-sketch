@@ -1,0 +1,11 @@
+.container {
+    width: 960px;
+    height: 960px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cell {
+    background-color: white;
+    border: 1px black solid;
+}
