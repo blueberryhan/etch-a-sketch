@@ -2,10 +2,15 @@
     width: 960px;
     height: 960px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(16, 1fr);
 }
 
 .cell {
     background-color: white;
+    border: 1px black solid;
+}
+
+.cell-colored-black {
+    background-color: black;
     border: 1px black solid;
 }
