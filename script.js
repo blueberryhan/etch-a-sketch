@@ -1,7 +1,8 @@
 const grid = document.querySelector('.container');
 
 function x16Grid() {
-
+   
+    grid.style.gridTemplateColumns = 'repeat(16, 1fr)';
     for ( i = 0; i <= 255; i++) {
         const gridCell = document.createElement('div');
         gridCell.classList.add('cell-sixteen');
@@ -23,13 +24,11 @@ function x24Grid() {
         grid.appendChild(gridCell);
     
         gridCell.addEventListener('mouseover', () => {
-            gridCell.style.backgroundColor = 'black';
+        gridCell.style.backgroundColor = 'black';
         });
     }
 
 };
 
 x24Grid();
-
-
 

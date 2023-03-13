@@ -1,8 +1,15 @@
-.container{
+.container {
     width: 960px;
     height: 960px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+}
+
+.input-container {
+    width: 960px;
+    height: 960px;
+    display: grid;
+    position: absolute;
+
 }
 
 .cell-sixteen {
@@ -11,6 +18,11 @@
 }
 
 .cell-twenty-four {
+    background-color: white;
+    border: 1px black solid;
+}
+
+.cell-input {
     background-color: white;
     border: 1px black solid;
 }
