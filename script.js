@@ -1,8 +1,6 @@
 const grid = document.querySelector('.container');
 
-function x16Grid() {
-   
-    grid.style.gridTemplateColumns = 'repeat(16, 1fr)';
+grid.style.gridTemplateColumns = 'repeat(16, 1fr)';
     for ( i = 0; i <= 255; i++) {
         const gridCell = document.createElement('div');
         gridCell.classList.add('cell-sixteen');
@@ -13,22 +11,27 @@ function x16Grid() {
         });
     }
 
-};
+function userInputGrid() {
 
-function x24Grid() {
-
-    grid.style.gridTemplateColumns = 'repeat(24, 1fr)';
-    for ( i = 0; i <= 575; i++) {
+    let gridInput = prompt('Please input grid dimensions');
+    grid.innerHTML = '';
+    grid.style.gridTemplateColumns = `repeat(${gridInput}, 1fr)`;
+    for ( i = 0; i <= (gridInput * gridInput) - 1; i++) {
+        if (gridInput > 99) {
+            return 'Please input number less than 100 :)';
+        }
         const gridCell = document.createElement('div');
         gridCell.classList.add('cell-twenty-four');
         grid.appendChild(gridCell);
-    
+        
         gridCell.addEventListener('mouseover', () => {
         gridCell.style.backgroundColor = 'black';
         });
+
     }
 
 };
 
-x24Grid();
-
+const dimensionButton = document.querySelector('.dimension-button');
+dimensionButton.addEventListener('click', userInputGrid);
+console.log(dimensionButton);

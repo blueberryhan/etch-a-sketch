@@ -4,14 +4,6 @@
     display: grid;
 }
 
-.input-container {
-    width: 960px;
-    height: 960px;
-    display: grid;
-    position: absolute;
-
-}
-
 .cell-sixteen {
     background-color: white;
     border: 1px black solid;
@@ -22,11 +14,6 @@
     border: 1px black solid;
 }
 
-.cell-input {
-    background-color: white;
-    border: 1px black solid;
-}
-
-.buttons {
-    display: flex;
+.dimension-button {
+    
 }
