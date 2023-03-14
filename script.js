@@ -17,8 +17,13 @@ function userInputGrid() {
     grid.innerHTML = '';
     grid.style.gridTemplateColumns = `repeat(${gridInput}, 1fr)`;
     for ( i = 0; i <= (gridInput * gridInput) - 1; i++) {
-        if (gridInput > 99) {
-            return 'Please input number less than 100 :)';
+        if (gridInput > 100) {
+            alert('Please input number less than 100 :)');
+            return userInputGrid();
+        }
+        else if (gridInput < 0) {
+            alert('Please input number greater than zero :)');
+            return userInputGrid();
         }
         const gridCell = document.createElement('div');
         gridCell.classList.add('cell-twenty-four');
@@ -34,4 +39,3 @@ function userInputGrid() {
 
 const dimensionButton = document.querySelector('.dimension-button');
 dimensionButton.addEventListener('click', userInputGrid);
-console.log(dimensionButton);
