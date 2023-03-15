@@ -9,11 +9,15 @@
     border: 1px black solid;
 }
 
-.cell-twenty-four {
+.cell-dimension-input {
     background-color: white;
     border: 1px black solid;
 }
 
 .dimension-button {
+
+}
+
+.color-change-button {
     
 }
