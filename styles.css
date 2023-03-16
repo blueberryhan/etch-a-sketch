@@ -1,23 +1,47 @@
+body {
+    background-color: rgb(202,231,193);
+}
+
 .container {
     width: 960px;
     height: 960px;
     display: grid;
+    margin: 0 auto;
 }
 
 .cell-sixteen {
     background-color: white;
-    border: 1px black solid;
+    border: 1px grey solid;
 }
 
 .cell-dimension-input {
     background-color: white;
-    border: 1px black solid;
+    border: 1px grey solid;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    color: grey;
+    font-family: sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 3px;
 }
 
 .dimension-button {
-
+    padding: 10px;
+    background-color: rgb(248,200,220);
+    border: none;
+    color: black;
 }
 
 .color-change-button {
-    
+    background-color: rgb(248,200,220);
+    border: none;
+    color: black;
 }
